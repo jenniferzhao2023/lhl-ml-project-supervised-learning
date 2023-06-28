@@ -5,12 +5,29 @@
 ### Duration:
 Approximately 3 hours and 20 minutes.
 ### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+In this project, the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases was utilized to gain insights and develop a predictive model. The following steps were as below:
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+Exploratory data analysis and pre-processing: The dataset was imported and underwent thorough data cleaning processes. Relationships between different variables were analyzed and visualized to gain insights into the data. Additionally, steps were taken to handle missing values and outliers effectively.
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+Model building: Three machine learning models were constructed, including the Random Forest Model, Decision Tree model, and XGBoost. Each model was trained and evaluated based on their performance metrics. After comparing the models, it was observed that the Random Forest model outperformed the others in terms of accuracy.
+
+By following these steps, the project aimed to harness the power of data analysis, visualization, and machine learning to gain valuable insights from the "Diabetes" dataset and build an accurate predictive model for diabetes.
+
+### Key Finds:
+
+Based on the machine learning models developed and the exploratory data analysis (EDA) conducted for diabetes modeling, here are four key findings:
+
+1. EDA: When analyzing the data, it is crucial to pay attention to zero values. It is important to understand the units of each column and determine the normal
+range to gain insights into potential outliers. Before decided the outlier, I searched up if the max value of Insulin and Glucose are reasonable.
+
+2. Data Patterns: Exploratory data analysis revealed patterns and correlations within the diabetes dataset. For instance, there was a positive correlation 
+between glucose level and diabetes diagnosis, indicating that higher glucose levels are associated with an increased risk of diabetes. Additionally, factors
+like BMI and age showed some degree of correlation with diabetes occurrence.
+
+3. Feature Importance: The Random Forest model identified certain features as significant predictors of diabetes. These features, such as glucose level, 
+body mass index (BMI), and age, exhibited higher importance in influencing the model's predictions. 
+
+4. Model Performance: Among the three models compared, the Random Forest model outperformed the others in terms of accuracy. This suggests that the ensemble 
+approach employed by Random Forest, which combines multiple decision trees, can effectively handle the complexity of the diabetes dataset and yield more
+accurate predictions.
